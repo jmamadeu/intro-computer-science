@@ -2,9 +2,10 @@
 
 Pass those dificult algorithms and data structures interview questions asked by the largest silicon valley companies.
 
+This repo covers all of my studies of `Intro to Algorithms and data structures`
+
 ### Some Topics
 
-- Algorithms and Big O Analysis
 - Recursion
 - Sorting
 - Data Structures
@@ -12,3 +13,11 @@ Pass those dificult algorithms and data structures interview questions asked by 
 - Binary Search Trees
 - Tree Traversals
 - Path Finding.
+
+### How to run
+
+This project was build with NodeJS and Typescript
+
+> yarn test # To run all the algorithms test
+
+Made by me `jmamadeu`.
