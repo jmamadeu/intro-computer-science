@@ -55,3 +55,22 @@ export function mergeSort(numbers: number[]): number[] {
 
   return merge(sortedLeft, sortedRight);
 }
+
+export function quickSort(numbers: number[]): number[] {
+  if (numbers.length <= 1) return numbers;
+
+  const pivot = numbers[numbers.length - 1];
+
+  const left: number[] = [];
+  const right: number[] = [];
+
+  for (let i = 0; i < numbers.length - 1; i++) {
+    if (numbers[i] < pivot) {
+      left.push(numbers[i]);
+    } else {
+      right.push(numbers[i]);
+    }
+  }
+
+  return [...quickSort(left), pivot, ...quickSort(right)];
+}

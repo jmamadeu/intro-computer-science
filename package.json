@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn  --ignore-watch node_modules --transpile-only src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",

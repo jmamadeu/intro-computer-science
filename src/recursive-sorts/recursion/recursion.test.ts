@@ -1,4 +1,10 @@
-import { fibonacci, nestedAdd, fatorial, mergeSort } from './recursion';
+import {
+  fibonacci,
+  nestedAdd,
+  fatorial,
+  mergeSort,
+  quickSort,
+} from './recursion';
 
 describe('Recursion', () => {
   test('Fibonacci', () => {
@@ -19,8 +25,12 @@ describe('Recursion', () => {
   });
 
   test('Merge Sort', () => {
-    expect(mergeSort([10, 2, 3, 1, 2, 3, 4, 53])).toEqual([
-      1, 2, 2, 3, 3, 4, 10, 53,
-    ]);
+    const input = [10, 2, 3, 1, 2, 3, 4, 53];
+    expect(mergeSort(input)).toEqual([1, 2, 2, 3, 3, 4, 10, 53]);
+  });
+
+  test('Quick Sort', () => {
+    const input = [10, 2, 3, 1, 2, 3, 4, 53];
+    expect(quickSort(input)).toEqual([1, 2, 2, 3, 3, 4, 10, 53]);
   });
 });
